@@ -7,7 +7,7 @@ interface ErrorMessage {
   }>;
 }
 
-function getErrorMessage():  ErrorMessage {
+function getErrorMessage(): ErrorMessage {
   return {
     message: 'Error raised',
     stack: [

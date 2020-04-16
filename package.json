@@ -8,8 +8,7 @@
   "scripts": {
     "lint": "eslint --ext js,ts src",
     "build": "shx rm -rf lib && tsc",
-    "test": "jest",
-    "pre-commit": "yarn run lint"
+    "test": "jest"
   },
   "devDependencies": {
     "@types/jest": "^25.2.1",
@@ -23,7 +22,8 @@
     "prettier": "^2.0.4",
     "shx": "^0.3.2",
     "ts-jest": "^25.3.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "validate-commit-msg": "^2.14.0"
   },
   "config": {
     "commitizen": {
@@ -33,7 +33,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "yarn run lint && yarn test",
-      "pre-push": "yarn run lint"
+      "commit-msg": "validate-commit-msg"
     }
   }
 }

@@ -8,7 +8,7 @@ describe('getErrorMessage', () => {
         {
           line: 2,
           column: 9,
-          filename: 'http://192.168.31.8:8000/c.js',
+          filename: 'http://192.168.31.8:8000/c.js'
         }
       ]
     });
